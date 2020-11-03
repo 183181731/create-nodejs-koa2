@@ -1,0 +1,40 @@
+{
+  "name": "create-nodejs-koa2",
+  "version": "1.0.0",
+  "description": "a nodejs koa2 server scaffold with gulp4 eslint7 babel7 nodemon",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "prod": "node dist/app.js"
+  },
+  "keywords": ["koa2","nodejs"],
+  "author": "QA-Wang",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.12.1",
+    "koa": "^2.13.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^9.4.0",
+    "koa2-cors": "^2.0.6",
+    "require-directory": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint7": "^0.3.0",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
