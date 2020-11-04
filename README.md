@@ -5,7 +5,7 @@
 [Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 1. Clone source to your workdir
-2. install dependencies
+2. Install dependencies
 ```
 npm install
 ```
