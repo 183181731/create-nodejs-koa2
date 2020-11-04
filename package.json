@@ -8,7 +8,10 @@
     "build": "gulp build",
     "prod": "node dist/app.js"
   },
-  "keywords": ["koa2","nodejs"],
+  "keywords": [
+    "koa2",
+    "nodejs"
+  ],
   "author": "QA-Wang",
   "license": "ISC",
   "dependencies": {
@@ -33,6 +36,7 @@
     "eslint-plugin-standard": "^4.0.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-eslint7": "^0.3.0",
     "gulp-nodemon": "^2.5.0",
     "gulp-uglify": "^3.0.2"

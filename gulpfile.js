@@ -1,9 +1,15 @@
 'use strict'
 const { src, dest, series } = require('gulp');
 const babel = require('gulp-babel')
+const clean = require('gulp-clean')
 const uglify = require('gulp-uglify');
 const eslint = require('gulp-eslint7');
 const nodemon = require('gulp-nodemon')
+
+function cleanContent() {
+	return src('dist/*', {read: false})
+		.pipe(clean())
+}
 
 function babelBuild() {
     return src('./src/**/*.js')
@@ -44,5 +50,5 @@ function runNodeMon(done) {
         })
 }
 exports.runEslint = runEslint
-exports.build = series(babelBuild)
+exports.build = series(cleanContent, babelBuild)
 exports.default = series(runEslint, runNodeMon)
